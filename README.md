@@ -1,2 +1,3 @@
 # DesigningRESTfulAPIs
-notes related to designing RESTful APIs
+some notes and examples related to designing RESTful APIs
+
