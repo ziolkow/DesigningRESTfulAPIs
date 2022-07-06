@@ -24,11 +24,21 @@ Different view
 
 -> finding API resources
 
+API Relationship between resources:
+* Independent: can exist on its own
+* Dependent: can exist only when another resource already exists
+* Associative: can be dependent or independent but needs additional information to describe it
 
 ```mermaid
-sequenceDiagram
-    Alice->>+John: Hello John, how are you?
-    Alice->>+John: John, can you hear me?
-    John-->>-Alice: Hi Alice, I can hear you!
-    John-->>-Alice: I feel great!
+erDiagram
+
+CUSTOMER ||--o{ ORDERS : places
+
+ORDERS ||--|{ CARTS : includes
+
+CARTS ||--o{ ITEMS : includes
 ```
+
+API doesn't need to map the database schema!
+
+At this point we have a design and a structure.
