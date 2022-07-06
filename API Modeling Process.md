@@ -25,8 +25,6 @@ Different view
 -> finding API resources
 
 
-`curl --location --request POST '``[https://processing-output-stage.goorange.sixt.com/reports/aena](https://processing-output-stage.goorange.sixt.com/reports/aena)``' --header 'Content-Type: application/json' --data-raw '{"bumo": "202203"}'`
-
 ```mermaid
 sequenceDiagram
     Alice->>+John: Hello John, how are you?
